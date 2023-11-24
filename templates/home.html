@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        h1{
+            text-align: left;
+        }
+        h2{
+            text-align: left;
+        }
+        h3{
+            text-align: left;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('{{ url_for('static', filename='ashtonmartincar.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.088);
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0008ff4f;
+        }
+
+        .main-content {
+            padding: 100px 20px;
+        }
+
+        .innovative-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            background-color: rgba(255, 255, 255, 0.489);
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .innovative-text {
+            max-width: 1000px;
+            text-align: left;
+            margin-right: 50px;
+            color: #333;
+        }
+
+        .innovative-image {
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+
+        .contact-section {
+            background-color: #333;
+            color: #fff;
+            padding: 2px 20px;
+            text-align: center;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: rgb(60, 138, 164);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .contact-form button {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(0, 208, 255);
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #fff;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/car_purchase_prediction">Prediction</a>
+            <a href="/educational_content">Content and Reviews</a>
+            <a href="/payment">Premium Subscription</a>
+            <a href="/feedback_form">Feedback</a>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <p>&#160 &#160 &#160 </p>
+        <h2 style="font-size: 150%;">&#160 &#160 &#160 &#160 &#160 Welcome to </h2>
+        <h1 style="font-size: 350%;">&#160 &#160 The Wonder Motors</h1>
+        <h2 style="color:rgb(14, 58, 68);">&#160 &#160 &#160 &#160 &#160 Discover innovation and excellence in every detail!</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        
+
+        <!-- Add more sections and content as needed -->
+        <div class="innovative-section">
+            <div class="innovative-text">
+                <h2>Revolutionizing Car Purchase Prediction</h2>
+                <p>Embark on a new era of car buying with our cutting-edge prediction technology. We don't just sell cars; we predict your perfect match. Discover the future of automotive shopping with our innovative features:</p>
+                <ul>
+                    <li><strong>Personalized Recommendations:</strong> Tailored suggestions based on your preferences and lifestyle.</li>
+                    <li><strong>Advanced AI Algorithms:</strong> Our powerful AI analyzes vast datasets to predict your ideal car.</li>
+                    <li><strong>Educational Content:</strong> How to take care of your cars, which car to prefer over others, get to share your experience and hear from the experienced.</li>
+                    <li><strong>Feedback:</strong> Share your opinion about the website, because we value your opinion and comfort.</li>
+                </ul>
+                <h2>Driving Dreams, Defining Journeys</h2>
+                <p>Embark on a journey where every car is a story waiting to be told. From the sleek elegance of sedans to the dynamic versatility of hatchbacks and the rugged strength of SUVs, our collection is designed to fulfill your driving dreams:</p>
+                <ul>
+                    <li><strong>Sedan:</strong> Experience the epitome of sophistication with our sleek sedans. Crafted for comfort and style, these cars seamlessly blend performance and luxury, making every journey a refined experience.</li>
+                    <li><strong>Hatchback:</strong>  Unleash the spirit of urban driving with our dynamic hatchbacks. Compact yet powerful, these cars offer agility and versatility, making them perfect for city life. Get ready for a thrilling ride packed with features and style.</li>
+                    <li><strong>SUV:</strong>  Elevate your driving experience with our robust SUVs. Designed for the bold and adventurous, these vehicles combine strength with sophistication. Whether it's a rugged off-road expedition or a smooth city cruise, our SUVs are ready for any terrain.</li>
+            </div>
+            <img src="newcar.jpg" alt="Innovative Image" class="innovative-image">
+        </div>
+
+    </div>
+
+
+    
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+
+                <p>&copy; 2023 Your Company | All Rights Reserved</p>
+            </div>
+        </div>
+</body>
+</html>

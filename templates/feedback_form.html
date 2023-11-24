@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('{{ url_for('static', filename='amc.jpg') }}'); /* Replace with your background image path */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #9ec4c7b0;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgba(115, 139, 162, 0.682);
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0008ff4f;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/car_purchase_prediction">Prediction</a>
+            <a href="/educational_content">Content and Reviews</a>
+            <a href="/payment">Premium Subscription</a>
+            <a href="/feedback_form">Feedback</a>
+        </nav>
+    </header>
+
+    <h1 style="font-family:'Times New Roman', Times, serif;">We Value Your Opinion</h1>
+    <p style="font-family:verdana;">Help us to make the site better with your critical reviews.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd37uf6glkNaDaJiiAZJHvAqGF79vPYKV3P7z9huJrfcSDFCQ/viewform?usp=sf_link"><b>Give Feedback</b></a>
+
+</body>
+</html>

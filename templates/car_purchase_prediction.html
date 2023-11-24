@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Subscription</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            background-image: url('amcpp.jpg');
+            color: #333;
+        }
+
+        header {
+            background-color: rgb(133, 207, 224);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        input.form-control {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0008ff4f;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Car Purchase Prediction</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/car_purchase_prediction">Prediction</a>
+                <a href="/educational_content">Content and Reviews</a>
+                <a href="/payment">Premium Subscription</a>
+                <a href="/feedback_form">Feedback</a>
+            </nav>
+    </header>
+
+    <section>
+        <form id="prediction-form">
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" class="form-control" id="age" name="age" placeholder="Enter your age" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="income">Income:</label>
+                <input type="number" class="form-control" id="income" name="income" placeholder="Enter your income" required>
+            </div>
+    
+            <button type="button" class="btn btn-success">Predict Purchase</button>
+        </form>
+    
+        <div id="prediction-result"></div>
+    
+
+</body>
+</html>

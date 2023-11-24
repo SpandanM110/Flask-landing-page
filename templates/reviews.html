@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            background-image: url('{{ url_for('static', filename='edu.jpeg') }}');
+        }
+
+        header {
+            background-color: #2E3564;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .review-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .review-card {
+            background-color: #fff;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .customer-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .review-date {
+            color: #888;
+            font-size: 0.8em;
+            margin-bottom: 10px;
+        }
+
+        .review-content {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #2E3564;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Customer Reviews</h1>
+    </header>
+
+    <section>
+        <div class="review-container">
+            <div class="review-card">
+                <p class="customer-name">John Doe</p>
+                <p class="review-date">Reviewed on July 10, 2023</p>
+                <p class="review-content">I recently purchased the XYZ model, and I must say it's been an incredible experience. The sleek design, advanced features, and smooth performance exceeded my expectations. It's a perfect blend of style and functionality!</p>
+            </div>
+
+            <div class="review-card">
+                <p class="customer-name">Jane Smith</p>
+                <p class="review-date">Reviewed on May 15, 2023</p>
+                <p class="review-content">The ABC model is a game-changer! The fuel efficiency is impressive, and the safety features make me feel secure on the road. The interior is spacious, and the technology integration is seamless. I highly recommend this car!</p>
+            </div>
+
+            <div class="review-card">
+                <p class="customer-name">Sam Joon</p>
+                <p class="review-date">Reviewed on July 21, 2022</p>
+                <p class="review-content">I've been a loyal customer of the LMN brand, and their latest model lives up to the brand's reputation. The driving experience is unmatched, and the attention to detail in the design makes it stand out. Proud to be an owner!</p>
+            </div>
+
+            <div class="review-card">
+                <p class="customer-name">Steve Jobs</p>
+                <p class="review-date">Reviewed on March 15, 2022</p>
+                <p class="review-content">I recently upgraded to the UVW model, and it's been a game-changer for my daily commute. The fuel efficiency is remarkable, saving me money on gas. The advanced safety features have given me peace of mind, especially during long drives. The stylish exterior and comfortable interior make every journey enjoyable. I couldn't be happier with my choice!</p>
+            </div>
+
+            <!-- Add more review cards as needed -->
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Customer Reviews | All Rights Reserved
+    </footer>
+
+</body>
+</html>

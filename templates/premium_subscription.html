@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Subscription</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgba(152, 206, 209, 0.694);
+            color: #333;
+        }
+
+        header {
+            background-color: #7ab4d7;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .subscription-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .subscription-card {
+            background-color: rgba(255, 255, 255, 0.601);
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .subscription-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .subscription-price {
+            color: #2E3564;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .subscription-features {
+            margin-bottom: 20px;
+        }
+
+        .subscribe-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2E3564;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .subscribe-button:hover {
+            background-color: #fff;
+            color: #2E3564;
+        }
+
+        footer {
+            background-color: #2E3564;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0008ff4f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div class="subscription-container">
+
+            <div class="subscription-card">
+                <h2 class="subscription-title">Basic Plan</h2>
+                <p class="subscription-price">$9.99/month</p>
+                <ul class="subscription-features">
+                    <li>Access to all car prediction models</li>
+                    <li>Email notifications for new predictions</li>
+                    <li>Basic customer support</li>
+                </ul>
+                <a href="{{ url_for('payment') }}" class="subscribe-button">Subscribe Now</a>
+            </div>
+
+            <div class="subscription-card">
+                <h2 class="subscription-title">Premium Plan</h2>
+                <p class="subscription-price">$19.99/month</p>
+                <ul class="subscription-features">
+                    <li>All features from the Basic Plan</li>
+                    <li>Advanced prediction analytics</li>
+                    <li>Premium customer support</li>
+                    <li>Exclusive access to new features</li>
+                </ul>
+                <a href="{{ url_for('payment') }}" class="subscribe-button">Subscribe Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Premium Subscription | All Rights Reserved
+    </footer>
+
+</body>
+
+</html>
+

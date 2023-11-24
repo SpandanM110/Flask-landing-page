@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: rgb(204, 246, 247);
+            margin: 0;
+        }
+
+        h1 {
+            color: #2E3564;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #2E3564;
+            font-weight: bold;
+        }
+
+        input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 15px 30px;
+            background-color: #2E3564;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0008ff4f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Secure Payment</h1>
+
+    <form id="payment-form">
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+
+        <label for="expiration-date">Expiration Date</label>
+        <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" required>
+
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+        <button type="button" onclick="processPayment()">Submit Payment</button>
+    </form>
+
+    <script>
+        function processPayment() {
+            // In a real scenario, this is where you would send the payment details to a server for processing
+            alert('Payment processed successfully!');
+        }
+    </script>
+
+</body>
+
+</html>
